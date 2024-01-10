@@ -27,7 +27,7 @@ export default function Main() {
                 {!isLoading &&
                     planetsInfo.map(planet => {
                         return <div key={planet.id}>
-                            <p>Name: {planet.name}</p>
+                            <p className="title">Name: {planet.name}</p>
                             <img src={planet.imgSrc.img} alt={planet.imgSrc.imgDescription
                             } />
                             <p>Description: {planet.description}</p>
