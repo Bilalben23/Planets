@@ -20,6 +20,7 @@ h1 {
     align-items: center;
     justify-content: center;
 
+
     & span {
         margin-top: 50px;
         display: inline-block;
@@ -53,12 +54,18 @@ h1 {
     grid-template-columns: auto auto;
     gap: 50px 30px;
 
+    .marked-text {
+        font-weight: 600;
+        text-decoration: underline;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
-    & div {
+    &>div {
         padding: 10px;
         background-color: #fff;
         color: #000;
         border-radius: 20px;
+        filter: drop-shadow(1px 1px 5px #000);
 
         .title {
             text-align: center;
@@ -67,11 +74,16 @@ h1 {
             font-size: 1.2em;
             letter-spacing: 1px;
         }
+        
+        & p:has(.marked-text) {
+            margin-block: 10px;
+        }
 
         & img {
             width: 100%;
             border-radius: 10px;
             margin-bottom: 20px;
+            user-select: none;
         }
     }
 
