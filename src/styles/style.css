@@ -74,7 +74,7 @@ h1 {
             font-size: 1.2em;
             letter-spacing: 1px;
         }
-        
+
         & p:has(.marked-text) {
             margin-block: 10px;
         }
@@ -86,6 +86,12 @@ h1 {
             user-select: none;
         }
     }
+}
 
-
+footer {
+    text-align: center;
+    margin-block: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1.2em;
 }
